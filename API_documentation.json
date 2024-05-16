@@ -1,0 +1,1397 @@
+{
+	"info": {
+		"_postman_id": "c2d49869-6f8b-4f72-864e-0c1c195618f2",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25007121",
+        "title": "API documentation",
+        "version": "0.0.1"
+    },
+	"item": [
+		{
+			"name": "Registration User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Егор Нерубацкий\",\n    \"email\": \"yehor@example.com\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8886/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Егор Нерубацкий\",\n    \"email\": \"yehor@example.com\",\n    \"password\": \"12345678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8886/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 13:36:16 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registered successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"yehor@example.com\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8886/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"yehor@example.com\",\n    \"password\": \"12345678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8886/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 13:36:22 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748\",\n    \"token_type\": \"Bearer\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get all tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8886/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all tasks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8886/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 16:15:17 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 21,\n        \"status\": \"done\",\n        \"priority\": 5,\n        \"title\": \"Назва вашого подзавдання 21\",\n        \"description\": \"Опис вашого подзавдання 7\",\n        \"created_at\": \"2024-05-16T13:38:46.000000Z\",\n        \"completed_at\": \"2024-05-16 14:21:31\",\n        \"subtasks\": []\n    },\n    {\n        \"id\": 10,\n        \"status\": \"todo\",\n        \"priority\": 2,\n        \"title\": \"Repellat nesciunt.\",\n        \"description\": \"Pariatur sunt.\",\n        \"created_at\": \"2024-05-16T12:28:58.000000Z\",\n        \"completed_at\": null,\n        \"subtasks\": [\n            {\n                \"id\": 20,\n                \"status\": \"todo\",\n                \"priority\": 2,\n                \"title\": \"Et non maxime.\",\n                \"description\": \"Modi aut excepturi.\",\n                \"created_at\": \"2024-05-16T12:28:58.000000Z\",\n                \"completed_at\": null,\n                \"subtasks\": []\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Store Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"test task 222\",\n    \"description\": \"test task description 222\",\n    \"priority\": 5,\n    \"status\":\"todo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8886/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "store",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"test task 222\",\n    \"description\": \"test task description 222\",\n    \"priority\": 5,\n    \"status\":\"todo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8886/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 16:16:18 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 24,\n        \"status\": \"todo\",\n        \"priority\": 5,\n        \"title\": \"test task 222\",\n        \"description\": \"test task description 222\",\n        \"created_at\": \"2024-05-16T16:16:18.000000Z\",\n        \"completed_at\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"test title 22\",\n    \"description\": \"description\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8886/api/tasks/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks",
+						"21"
+					]
+				},
+				"description": "task_complete"
+			},
+			"response": [
+				{
+					"name": "update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"test title 22\",\n    \"description\": \"description\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8886/api/tasks/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks",
+								"21"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 16:17:04 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 21,\n        \"status\": \"done\",\n        \"priority\": 5,\n        \"title\": \"test title 22\",\n        \"description\": \"description\",\n        \"created_at\": \"2024-05-16T13:38:46.000000Z\",\n        \"completed_at\": \"2024-05-16 14:21:31\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Complete Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8886/api/tasks/21/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks",
+						"21",
+						"complete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "complete",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8886/api/tasks/21/complete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks",
+								"21",
+								"complete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 16:17:23 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 21,\n        \"status\": \"done\",\n        \"title\": \"test title 22\",\n        \"description\": \"description\",\n        \"completed_at\": \"2024-05-16T16:17:23.039913Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Store Subtask",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Назва вашого пiдзавдання 77\",\n    \"description\": \"Опис вашого пiдзавдання 77\",\n    \"priority\": 4,\n    \"status\":\"todo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8886/api/tasks/22/subtasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks",
+						"22",
+						"subtasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Store Subtask",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"test subtask title 21\",\n    \"description\": \"test subtask description 21\",\n    \"priority\": 4,\n    \"status\":\"todo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8886/api/tasks/21/subtasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks",
+								"21",
+								"subtasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 16:18:14 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 25,\n        \"title\": \"test subtask title 21\",\n        \"description\": \"test subtask description 21\",\n        \"status\": \"todo\",\n        \"priority\": 4,\n        \"parent_id\": \"21\",\n        \"completed_at\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Sort by priority",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8886/api/tasks?priority=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "priority",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sort by priority",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8886/api/tasks?priority=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "priority",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 16:19:42 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 10,\n        \"status\": \"todo\",\n        \"priority\": 2,\n        \"title\": \"Repellat nesciunt.\",\n        \"description\": \"Pariatur sunt.\",\n        \"created_at\": \"2024-05-16T12:28:58.000000Z\",\n        \"completed_at\": null,\n        \"subtasks\": [\n            {\n                \"id\": 20,\n                \"status\": \"todo\",\n                \"priority\": 2,\n                \"title\": \"Et non maxime.\",\n                \"description\": \"Modi aut excepturi.\",\n                \"created_at\": \"2024-05-16T12:28:58.000000Z\",\n                \"completed_at\": null,\n                \"subtasks\": []\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Sort by status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8886/api/tasks?status=todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "todo"
+						},
+						{
+							"key": "status",
+							"value": "done",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sort by status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8886/api/tasks?status=todo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "todo"
+								},
+								{
+									"key": "status",
+									"value": "done",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 16:19:59 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 24,\n        \"status\": \"todo\",\n        \"priority\": 5,\n        \"title\": \"test task 222\",\n        \"description\": \"test task description 222\",\n        \"created_at\": \"2024-05-16T16:16:18.000000Z\",\n        \"completed_at\": null,\n        \"subtasks\": []\n    },\n    {\n        \"id\": 10,\n        \"status\": \"todo\",\n        \"priority\": 2,\n        \"title\": \"Repellat nesciunt.\",\n        \"description\": \"Pariatur sunt.\",\n        \"created_at\": \"2024-05-16T12:28:58.000000Z\",\n        \"completed_at\": null,\n        \"subtasks\": [\n            {\n                \"id\": 20,\n                \"status\": \"todo\",\n                \"priority\": 2,\n                \"title\": \"Et non maxime.\",\n                \"description\": \"Modi aut excepturi.\",\n                \"created_at\": \"2024-05-16T12:28:58.000000Z\",\n                \"completed_at\": null,\n                \"subtasks\": []\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Sort by desc, asc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8886/api/tasks?sort=priority:desc,created_at:asc\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "priority:desc,created_at:asc\n"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sort by desc, asc",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8886/api/tasks?sort=priority:desc,created_at:asc\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "priority:desc,created_at:asc\n"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 16:20:23 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 21,\n        \"status\": \"done\",\n        \"priority\": 5,\n        \"title\": \"test title 22\",\n        \"description\": \"description\",\n        \"created_at\": \"2024-05-16T13:38:46.000000Z\",\n        \"completed_at\": \"2024-05-16 16:17:23\",\n        \"subtasks\": [\n            {\n                \"id\": 25,\n                \"status\": \"todo\",\n                \"priority\": 4,\n                \"title\": \"test subtask title 21\",\n                \"description\": \"test subtask description 21\",\n                \"created_at\": \"2024-05-16T16:18:14.000000Z\",\n                \"completed_at\": null,\n                \"subtasks\": []\n            }\n        ]\n    },\n    {\n        \"id\": 24,\n        \"status\": \"todo\",\n        \"priority\": 5,\n        \"title\": \"test task 222\",\n        \"description\": \"test task description 222\",\n        \"created_at\": \"2024-05-16T16:16:18.000000Z\",\n        \"completed_at\": null,\n        \"subtasks\": []\n    },\n    {\n        \"id\": 10,\n        \"status\": \"todo\",\n        \"priority\": 2,\n        \"title\": \"Repellat nesciunt.\",\n        \"description\": \"Pariatur sunt.\",\n        \"created_at\": \"2024-05-16T12:28:58.000000Z\",\n        \"completed_at\": null,\n        \"subtasks\": [\n            {\n                \"id\": 20,\n                \"status\": \"todo\",\n                \"priority\": 2,\n                \"title\": \"Et non maxime.\",\n                \"description\": \"Modi aut excepturi.\",\n                \"created_at\": \"2024-05-16T12:28:58.000000Z\",\n                \"completed_at\": null,\n                \"subtasks\": []\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Sort by search",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8886/api/tasks?search=test task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "test task"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sort by search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8886/api/tasks?search=test task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "test task"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 16:21:00 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 24,\n        \"status\": \"todo\",\n        \"priority\": 5,\n        \"title\": \"test task 222\",\n        \"description\": \"test task description 222\",\n        \"created_at\": \"2024-05-16T16:16:18.000000Z\",\n        \"completed_at\": null,\n        \"subtasks\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Destroy Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|0JfZG1q2JXVd9lOqRGhfaRZekwwtGMcogELfMh2199bfc748",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8886/api/tasks/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8886",
+					"path": [
+						"api",
+						"tasks",
+						"22"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Destroy Task",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 1|mwtsethFimIkSWHuvyBNlnWROvg1cmBSiiSvjpZT43fc549d",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8886/api/tasks/22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8886",
+							"path": [
+								"api",
+								"tasks",
+								"22"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.18"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 13:47:58 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"message\": \"Task deleted\"\n    }\n}"
+				}
+			]
+		}
+	],
+    "openapi": "",
+    "components": {}
+}
