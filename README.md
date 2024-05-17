@@ -30,6 +30,10 @@ docker-compose exec app composer update
 ```
 docker-compose exec app php artisan migrate:refresh --seed
 ```
+5. Generate application key (if not already generated)
+```
+docker-compose exec app php artisan key:generate
+```
 
 ## Usage
 
