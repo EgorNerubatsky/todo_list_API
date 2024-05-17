@@ -37,7 +37,7 @@ docker-compose exec app php artisan key:generate
 
 ## Usage
 
-In the root of the project, there is API documentation (API_documentation.json) 
+In the root of the project, there is API documentation (API_specification.json) 
 for complete information and further use.
 
 
